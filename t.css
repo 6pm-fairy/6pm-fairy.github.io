@@ -1,4 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 
-p.ph{font-family: Bad Script}
+p.ph {
+  font-family: Bad Script
+}
+
+div.back {
+  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat 50% 65%/950px fixed;
+  height: 700px;
+  padding: 30px;
+}
+
+div.back p {
+  font-family: Nanum Pen Script;
+  font-size: 20px;
+  padding-left: 15px;
+  color: white;
+}
+
+div.back div {
+  border: 2px solid white;
+  padding: 10px;
+  width: 70%;
+  margin-top: 30px;
+}
+
+p.ha {
+  background: linear-gradient(45deg, crimson, transparent)
+}
+
+p.jeus {
+  background: linear-gradient(45deg, mediumslateblue, transparent)
+}
+
+div.back p.ha,
+div.back p.jeus {
+  font-family: Bad Script;
+  font-size: 18px;
+}
