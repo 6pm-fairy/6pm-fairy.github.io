@@ -39,3 +39,20 @@ div.back p.jeus {
   font-family: Bad Script;
   font-size: 18px;
 }
+
+@keyframes revealAndExpand {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
