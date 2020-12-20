@@ -6,21 +6,21 @@ p.mb,
 p.ph {
   font-family: Bad Script;
   animation: reveal .9s;
+  transition: font-size ease .2s;
+}
+
+p.mb:hover,
+p.ph:hover {
+  font-size: 1.4em;
 }
 
 p.bd {
-  display: none;
+  animation: reveal 1s;
 }
 
 p.bd::before {
   font-family: IcoFont;
-  content: '\eec8';
-  animation: reveal 1s;
-}
-
-p.bd::after {
-  content: '15층';
-  animation: reveal 1.1s;
+  content: '\e98a';
 }
 
 div.back {
