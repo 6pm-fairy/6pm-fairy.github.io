@@ -13,13 +13,13 @@ div.role-root div.wa {
   color: #1d1d1f;
 }
 
-div.role-root p.title {
+div.role-root p.subtitle {
   color: #bf4800;
   font-size: 12px;
   font-size: 40px;
 }
 
-div.role-root p {
+div.role-root p.role {
   font-size: 24px;
 }
 
