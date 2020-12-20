@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script);
-@import url(https://fonts.googleapis.com/css?family=Bad+Script);
 @import 'icofont.css';
 @import 'font.css';
 
@@ -11,6 +10,7 @@ div.role-root div.wa {
   color: #1d1d1f;
   text-align: center;
   animation: reveal 1s;
+  margin: 30px 0;
 }
 
 div.role-root p.subtitle {
@@ -24,7 +24,7 @@ div.role-root h2 {
 }
 
 div.role-root p.role {
-  font-size: 24px;
+  font-size: 22px;
   margin: 5px 0;
   font-weight: bold;
 }
@@ -42,8 +42,14 @@ div.role-root div.chips p {
   background-color: rgb(0, 113, 227);
   color: white;
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 6px 12px;
   margin: 0 5px;
+  font-size: 14px;
+}
+
+div.role-root input,
+div.role-root input:not(:checked)~pre {
+  display: none;
 }
 
 div.role-root label.more {
@@ -51,25 +57,33 @@ div.role-root label.more {
   cursor: pointer;
 }
 
-div.role-root label.more+input,
-div.role-root label.more+input:not(:checked)+div {
-  display: none;
+div.role-root label.more::after {
+  content: '\ea5b';
+  font-family: IcoFont;
+  transition: transform ease .5s;
 }
 
+div.role-root input:checked label.more::after {
+  transform: rotate(-180deg);
+}
 
+div.role-root pre {
+  animation: reveal .5s;
+}
 
 
 
 p.mb,
 p.ph {
-  font-family: Bad Script;
+  font-family: Nanum Pen Script;
   animation: reveal .9s;
   transition: font-size ease .2s;
+  font-size: 1.6em;
 }
 
 p.mb:hover,
 p.ph:hover {
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 p.bd {
@@ -81,7 +95,7 @@ p.bd::before {
   content: '\e98a';
 }
 
-div.back {
+/* div.back {
   background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat calc(50% - 50px) calc(50% - 120px)/800px fixed, rgb(9, 7, 8);
   height: 700px;
   padding: 30px;
@@ -122,7 +136,7 @@ div.back p.ha,
 div.back p.jeus {
   font-family: Bad Script;
   font-size: 1.4em;
-}
+} */
 
 img[src*="/upload/TS/pcard-photo/2019067.jpg"] {
   animation: reveal .5s;
