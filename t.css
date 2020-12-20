@@ -2,6 +2,7 @@
 @import 'icofont.css';
 @import 'font.css';
 
+/* 업무 영역 */
 div.role-root,
 div.role-root div.ha,
 div.role-root div.wa {
@@ -10,7 +11,18 @@ div.role-root div.wa {
   color: #1d1d1f;
   text-align: center;
   animation: reveal 1s;
-  margin: 30px 0;
+  padding: 30px 0;
+}
+
+div.role-root div.ha {
+  background-color: #fafafa;
+  margin-bottom: 20px;
+}
+
+div.role-root div.wa {
+  background-color: black;
+  color: white;
+  padding-bottom: 0;
 }
 
 div.role-root p.subtitle {
@@ -60,19 +72,32 @@ div.role-root label.more {
 div.role-root label.more::after {
   content: '\ea5b';
   font-family: IcoFont;
-  transition: transform ease .5s;
+  display: inline-block;
+  transition: transform ease .2s;
 }
 
-div.role-root input:checked label.more::after {
+div.role-root input:checked+label.more::after {
   transform: rotate(-180deg);
 }
 
 div.role-root pre {
   animation: reveal .5s;
+  font-family: Nanum Pen Script;
+  font-size: 1.3em;
+}
+
+/* div.wa 하위 */
+div.role-root div.wa p:first-child {
+  margin-bottom: 30px;
+}
+
+div.role-root div.wa div.img {
+  background: url(https://kr.tmaxsoft.com/upload/imgs/product/20130821103406_106.png) no-repeat bottom center, linear-gradient(0deg, #333, transparent);
+  height: 300px;
 }
 
 
-
+/* 번호 영역 */
 p.mb,
 p.ph {
   font-family: Nanum Pen Script;
