@@ -3,7 +3,8 @@
 
 p.ph,
 p.mb {
-  font-family: Bad Script
+  font-family: Bad Script;
+  animation: revealAndExpand 1s;
 }
 
 div.back {
@@ -17,6 +18,7 @@ div.back p {
   font-size: 20px;
   padding-left: 15px;
   color: white;
+  animation: revealAndExpand 1.5s;
 }
 
 div.back div {
@@ -24,6 +26,7 @@ div.back div {
   padding: 10px;
   width: 70%;
   margin-top: 30px;
+  animation: revealAndExpand 1s;
 }
 
 p.ha {
@@ -41,18 +44,10 @@ div.back p.jeus {
 }
 
 @keyframes revealAndExpand {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
 
+  0%,
   50% {
     opacity: 0;
-    height: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: auto;
+    transform: translateY(20px);
   }
 }
