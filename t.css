@@ -8,10 +8,17 @@ p.mb {
 }
 
 div.back {
-  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat 50% 65%/950px fixed;
+  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat 50% calc(50% - 120px)/800px fixed, rgb(9,7,8);
   height: 700px;
   padding: 30px;
 }
+
+@media (min-device-width: 480px) {
+  div.back {
+    background-position: calc(50% + 50px) calc(50% - 120px);
+  }
+}
+
 
 div.back p {
   font-family: Nanum Pen Script, Bad Script;
