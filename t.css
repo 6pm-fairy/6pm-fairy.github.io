@@ -1,14 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 
-p.ph,
+p.ph {
+  font-family: Bad Script;
+  animation: reveal .8s;
+}
+
 p.mb {
   font-family: Bad Script;
+  animation: reveal .9s;
+}
+
+p.bd {
+  font-family: Nanum Pen Script;
+  font-size: 1.5em;
   animation: reveal 1s;
 }
 
 div.back {
-  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat 50% calc(50% - 120px)/800px fixed, rgb(9,7,8);
+  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat calc(50% - 50px) calc(50% - 120px)/800px fixed, rgb(9, 7, 8);
   height: 700px;
   padding: 30px;
 }
@@ -22,7 +32,7 @@ div.back {
 
 div.back p {
   font-family: Nanum Pen Script, Bad Script;
-  font-size: 20px;
+  font-size: 1.5em;
   padding-left: 15px;
   color: white;
   animation: reveal 1.5s;
@@ -31,7 +41,7 @@ div.back p {
 div.back div {
   border: 2px solid white;
   padding: 10px;
-  width: 70%;
+  max-width: 300px;
   margin-top: 30px;
   animation: reveal 1s;
 }
@@ -47,7 +57,7 @@ p.jeus {
 div.back p.ha,
 div.back p.jeus {
   font-family: Bad Script;
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
 img[src*="/upload/TS/pcard-photo/2019067.jpg"] {
