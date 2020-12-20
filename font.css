@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  src: url(./fonts/NanumBarunGothic.woff) format('woff');
+}

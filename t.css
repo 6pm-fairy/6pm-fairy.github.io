@@ -1,6 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 @import 'icofont.css';
+@import 'font.css';
+
+div.role-root,
+div.role-root div.ha,
+div.role-root div.wa {
+  display: flex;
+  flex-direction: column;
+  font-family: Nanum Barun Gothic;
+  font-size: 17px;
+  color: #1d1d1f;
+}
+
+div.role-root span {
+  position: static !important;
+}
+
+div.role-root span.title {
+  color: #bf4800;
+  font-size: 12px;
+  font-size: 40px;
+}
+
+div.role-root p {
+  font-size: 24px;
+}
+
+div.role-root div.chips span {
+  background-color: rgb(0, 113, 227);
+  border-radius: 50%;
+  padding: 8px 16px;
+}
+
+div.role-root span.more {
+  color: #06c;
+}
+
+
+
+
+
 
 p.mb,
 p.ph {
