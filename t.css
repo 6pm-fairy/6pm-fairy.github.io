@@ -6,33 +6,55 @@
 div.role-root,
 div.role-root div.ha,
 div.role-root div.wa {
-  display: flex;
-  flex-direction: column;
   font-family: Nanum Barun Gothic;
   font-size: 17px;
   color: #1d1d1f;
+  text-align: center;
+  animation: reveal 1s;
 }
 
 div.role-root p.subtitle {
   color: #bf4800;
   font-size: 12px;
+}
+
+div.role-root h2 {
   font-size: 40px;
+  margin: 15px 0 25px;
 }
 
 div.role-root p.role {
   font-size: 24px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+div.role-root p.since {
+  margin-top: 25px;
+}
+
+div.role-root div.chips {
+  margin: 10px 0;
 }
 
 div.role-root div.chips p {
+  display: inline-block;
   background-color: rgb(0, 113, 227);
-  border-radius: 50%;
+  color: white;
+  border-radius: 20px;
   padding: 8px 16px;
+  margin: 0 5px;
 }
 
-div.role-root p.more {
+div.role-root label.more {
   color: #06c;
+  cursor: pointer;
 }
 
+div.role-root label.more+input,
+div.role-root label.more+input:not(:checked)+div {
+  display: none;
+}
 
 
 
