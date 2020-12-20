@@ -3,15 +3,18 @@
 @import 'font.css';
 
 /* 업무 영역 */
-div.role-root,
+div.role-root {
+  font-family: Nanum Barun Gothic;
+  color: #1d1d1f;
+  font-size: 17px;
+  padding-top: 30px;
+  animation: reveal 1s;
+}
+
 div.role-root div.ha,
 div.role-root div.wa {
-  font-family: Nanum Barun Gothic;
-  font-size: 17px;
-  color: #1d1d1f;
-  text-align: center;
   animation: reveal 1s;
-  padding: 30px 0;
+  padding: 30px;
 }
 
 div.role-root div.ha {
@@ -22,7 +25,6 @@ div.role-root div.ha {
 div.role-root div.wa {
   background-color: black;
   color: white;
-  padding-bottom: 0;
 }
 
 div.role-root p.subtitle {
@@ -31,12 +33,12 @@ div.role-root p.subtitle {
 }
 
 div.role-root h2 {
-  font-size: 40px;
+  font-size: 44px;
   margin: 15px 0 25px;
 }
 
 div.role-root p.role {
-  font-size: 22px;
+  font-size: 20px;
   margin: 5px 0;
   font-weight: bold;
 }
@@ -46,7 +48,7 @@ div.role-root p.since {
 }
 
 div.role-root div.chips {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 div.role-root div.chips p {
@@ -55,7 +57,7 @@ div.role-root div.chips p {
   color: white;
   border-radius: 20px;
   padding: 6px 12px;
-  margin: 0 5px;
+  margin-right: 10px;
   font-size: 14px;
 }
 
@@ -67,6 +69,10 @@ div.role-root input:not(:checked)~pre {
 div.role-root label.more {
   color: #06c;
   cursor: pointer;
+}
+
+div.role-root label.more:hover {
+  text-decoration: underline;
 }
 
 div.role-root label.more::after {
@@ -87,13 +93,14 @@ div.role-root pre {
 }
 
 /* div.wa 하위 */
-div.role-root div.wa p:first-child {
-  margin-bottom: 30px;
+div.role-root div.wa>p:first-child {
+  margin: 10px 0 30px;
 }
 
 div.role-root div.wa div.img {
-  background: url(https://kr.tmaxsoft.com/upload/imgs/product/20130821103406_106.png) no-repeat bottom center, linear-gradient(0deg, #333, transparent);
+  background: url(https://kr.tmaxsoft.com/upload/imgs/product/20130821103406_106.png) no-repeat bottom right, linear-gradient(160deg, transparent 50%, #888, transparent);
   height: 300px;
+  margin: 0 -30px -30px;
 }
 
 
