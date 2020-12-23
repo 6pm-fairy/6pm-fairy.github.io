@@ -163,12 +163,14 @@ div.role2 p.ha {
 }
 
 div.role2 p.wa {
-  background: linear-gradient(45deg, mediumslateblue, transparent)
+  background: linear-gradient(45deg, mediumslateblue, transparent);
+  margin-top: 10px;
 }
 
 div.role2 p.ha,
 div.role2 p.wa {
-  font-size: 1.4em;
+  font-size: 2em;
+  padding: 3px;
 }
 
 img[src*="/upload/TS/pcard-photo/2019067.jpg"] {
