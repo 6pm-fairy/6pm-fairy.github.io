@@ -62,7 +62,8 @@ div.role1 div.chips p {
 }
 
 div.role1 input,
-div.role1 input:not(:checked)~pre
+div.role1 input:not(:checked)~pre,
+div.roles-wrapper > input,
 div.roles-wrapper > input:not(:checked)~div {
   display: none;
 }
