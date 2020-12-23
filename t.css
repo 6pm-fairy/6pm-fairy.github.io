@@ -4,6 +4,7 @@
 
 /* 업무 영역 */
 div.role-root {
+  display: none; /* 이거 일단 안 보이게 함 */
   font-family: Nanum Barun Gothic;
   color: #1d1d1f;
   font-size: 17px;
@@ -127,28 +128,29 @@ p.bd::before {
   content: '\e98a';
 }
 
-/* div.back {
+/* 요약된 업무 영역 */
+
+div.role2 {
   background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat calc(50% - 50px) calc(50% - 120px)/800px fixed, rgb(9, 7, 8);
   height: 700px;
   padding: 30px;
+  font-family: Nanum Pen Script;
 }
 
 @media (min-device-width: 480px) {
-  div.back {
+  div.role2 {
     background-position: calc(50% + 50px) calc(50% - 120px);
   }
 }
 
-
-div.back p {
-  font-family: Nanum Pen Script, Bad Script;
+div.role2 p {
   font-size: 1.5em;
   padding-left: 15px;
   color: white;
   animation: reveal 1.5s;
 }
 
-div.back div {
+div.role2 div {
   border: 2px solid white;
   padding: 10px;
   max-width: 300px;
@@ -156,19 +158,18 @@ div.back div {
   animation: reveal 1s;
 }
 
-p.ha {
+div.role2 p.ha {
   background: linear-gradient(45deg, crimson, transparent)
 }
 
-p.jeus {
+div.role2 p.wa {
   background: linear-gradient(45deg, mediumslateblue, transparent)
 }
 
-div.back p.ha,
-div.back p.jeus {
-  font-family: Bad Script;
+div.role2 p.ha,
+div.role2 p.wa {
   font-size: 1.4em;
-} */
+}
 
 img[src*="/upload/TS/pcard-photo/2019067.jpg"] {
   animation: reveal .5s;
