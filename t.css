@@ -4,7 +4,6 @@
 
 /* 업무 영역 */
 div.role1 {
-  display: none; /* 이거 일단 안 보이게 함 */
   font-family: Nanum Barun Gothic;
   color: #1d1d1f;
   font-size: 17px;
@@ -63,27 +62,28 @@ div.role1 div.chips p {
 }
 
 div.role1 input,
-div.role1 input:not(:checked)~pre {
+div.role1 input:not(:checked)~pre
+div.roles-wrapper > input:not(:checked)~div {
   display: none;
 }
 
-div.role1 label.more {
+label.more {
   color: #06c;
   cursor: pointer;
 }
 
-div.role1 label.more:hover {
+label.more:hover {
   text-decoration: underline;
 }
 
-div.role1 label.more::after {
+label.more::after {
   content: '\ea5b';
   font-family: IcoFont;
   display: inline-block;
   transition: transform ease .2s;
 }
 
-div.role1 input:checked+label.more::after {
+input:checked+label.more::after {
   transform: rotate(-180deg);
 }
 
