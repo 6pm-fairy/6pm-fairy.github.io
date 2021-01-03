@@ -88,6 +88,10 @@ input:checked+label.more::after {
   transform: rotate(-180deg);
 }
 
+label.more[for="role1-hider"] {
+  opacity: 0.3;
+}
+
 div.role1 pre {
   animation: reveal .5s;
   font-family: Nanum Pen Script;
@@ -146,15 +150,15 @@ div.role2 {
 
 div.role2 p {
   font-size: 1.5em;
-  padding-left: 15px;
+  padding: 1px 10px;
   color: white;
   animation: reveal 1.5s;
 }
 
 div.role2 div {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 10px;
-  max-width: 300px;
+  max-width: 250px;
   margin-top: 30px;
   animation: reveal 1s;
 }
@@ -165,13 +169,14 @@ div.role2 p.ha {
 
 div.role2 p.wa {
   background: linear-gradient(45deg, mediumslateblue, transparent);
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 div.role2 p.ha,
 div.role2 p.wa {
   font-size: 2em;
-  padding: 3px;
+  padding: 3px 5px;
+  margin-bottom: 3px;
 }
 
 img[src*="/upload/TS/pcard-photo/2019067.jpg"] {
