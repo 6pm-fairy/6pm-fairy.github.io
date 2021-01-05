@@ -136,15 +136,15 @@ p.bd::before {
 /* 요약된 업무 영역 */
 
 div.role2 {
-  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat calc(50% - 50px) calc(50% - 120px)/800px fixed, rgb(9, 7, 8);
-  height: 700px;
+  background: url(https://c.pxhere.com/photos/fb/b3/star_glow_night_sky_dark_milky_way-184039.jpg!d) no-repeat calc(50% - 50px) calc(50% - 220px)/800px fixed, rgb(9, 7, 8);
+  height: 500px;
   padding: 30px;
   font-family: Nanum Pen Script;
 }
 
 @media (min-device-width: 480px) {
   div.role2 {
-    background-position: calc(50% + 50px) calc(50% - 120px);
+    background-position: calc(50% + 50px) calc(50% - 220px);
   }
 }
 
