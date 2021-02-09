@@ -64,7 +64,8 @@ div.role1 div.chips p {
 div.role1 input,
 div.role1 input:not(:checked)~pre,
 div.roles-wrapper>input,
-div.roles-wrapper>input:not(:checked)~div {
+div.roles-wrapper>input:not(:checked)~div,
+div.roles-wrapper>input:not(:checked)~label {
   display: none;
 }
 
@@ -88,8 +89,10 @@ input:checked+label.more::after {
   transform: rotate(-180deg);
 }
 
+label.more[for="role2-hider"],
 label.more[for="role1-hider"] {
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  opacity: 0.1;
 }
 
 div.role1 pre {
