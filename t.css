@@ -92,7 +92,7 @@ input:checked+label.more::after {
 label.more[for="role2-hider"],
 label.more[for="role1-hider"] {
   /* opacity: 0.3; */
-  opacity: 0.05;
+  display: none;
 }
 
 div.role1 pre {
